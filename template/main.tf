@@ -110,7 +110,7 @@ resource "aws_instance" "example_vm" {
   instance_type = "t2.micro"
 
   tags = {
-    Name = "example-vm"
+    Name = "moshe-vm"
   }
 
   # Lookup the correct AMI based on the region
