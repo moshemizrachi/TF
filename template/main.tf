@@ -99,7 +99,7 @@ EOF
   }
 }
 
-resource "aws_instance" "moshe_vm" {
+resource "aws_instance" "example_vm" {
   # The connection block tells our provisioner how to
   # communicate with the resource (instance)
   connection {
@@ -110,7 +110,7 @@ resource "aws_instance" "moshe_vm" {
   instance_type = "t2.micro"
 
   tags = {
-    Name = "moshe-vm"
+    Name = "example-vm"
   }
 
   # Lookup the correct AMI based on the region
