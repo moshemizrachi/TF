@@ -38,3 +38,8 @@ variable "aws_amis" {
     eu-west-1 = "ami-0eee6eb870dc1cefa"
   }
 }
+
+variable "instance_type" {
+  type = string
+  description = "instance flavor type for EC2"
+}
