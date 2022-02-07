@@ -107,7 +107,7 @@ resource "aws_instance" "example_vm" {
     user = var.admin_user
   }
 
-  instance_type = "t2.micro"
+  instance_type = var.instance_type
 
   tags = {
     Name = "moshe1-vm"
